@@ -1,0 +1,236 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* CSS Reset */
+@import './reset.css';
+
+/* Custom Properties */
+:root {
+  /* Colors */
+  --clr-accent-blue: #109cf1;
+  --clr-yellow: #ffb946;
+  --clr-red: #f7685b;
+  --clr-green: #2ed47a;
+  --clr-purple: #885af8;
+  --clr-black: #192a3e;
+  --clr-table-black: #323c47;
+  --clr-table-gray: #707683;
+  --clr-dark-blue-text: #334d6e;
+  --clr-gray: #90a0b7;
+  --clr-icon-gray: #c2cfe0;
+  --clr-white: #ffffff;
+
+  /* Font Sizes */
+  --fs-body: 14px;
+  --fs-1: 50.165px;
+  --fs-2: 41.804px;
+  --fs-3: 34.5836px;
+  --fs-4: 29.03px;
+  --fs-5: 24.192px;
+  --fs-6: 20.16px;
+}
+
+/* General Styles */
+body {
+  color: var(--clr-black);
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--fs-body);
+  padding: 50px;
+}
+
+/* General Classes */
+.title {
+  color: var(--clr-icon-gray);
+  font-size: var(--fs-4);
+  font-weight: 600;
+}
+
+.sub-title {
+  color: var(--clr-icon-gray);
+  font-size: var(--fs-5);
+}
+
+.section {
+  padding-block: 50px;
+}
+
+/* Colors Section */
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.color-box {
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+}
+
+.accent-blue .color-box {
+  background-color: var(--clr-accent-blue);
+}
+
+.yellow .color-box {
+  background-color: var(--clr-yellow);
+}
+
+.red .color-box {
+  background-color: var(--clr-red);
+}
+
+.green .color-box {
+  background-color: var(--clr-green);
+}
+
+.purple .color-box {
+  background-color: var(--clr-purple);
+}
+
+.black .color-box {
+  background-color: var(--clr-black);
+}
+
+.table-black .color-box {
+  background-color: var(--clr-table-black);
+}
+
+.table-gray .color-box {
+  background-color: var(--clr-table-gray);
+}
+
+.dark-blue-text .color-box {
+  background-color: var(--clr-dark-blue-text);
+}
+
+.gray .color-box {
+  background-color: var(--clr-gray);
+}
+
+.icon-gray .color-box {
+  background-color: var(--clr-icon-gray);
+}
+
+.color-name {
+  color: var(--clr-dark-blue-text);
+  font-size: var(--fs-6);
+  font-weight: 600;
+}
+
+.color-hex {
+  color: var(--clr-dark-blue-text);
+}
+
+/* Typography Section */
+.font-name {
+  font-size: var(--fs-2);
+  font-weight: 600;
+  margin: 15px 0 30px 0;
+}
+
+.headings {
+  display: flex;
+  margin-top: 15px;
+}
+
+.headings h1 {
+  font-size: var(--fs-1);
+}
+
+.headings h2 {
+  font-size: var(--fs-2);
+}
+
+.headings h3 {
+  font-size: var(--fs-3);
+}
+
+.headings h4 {
+  font-size: var(--fs-4);
+}
+
+.headings h5 {
+  font-size: var(--fs-5);
+}
+
+.headings h6 {
+  font-size: var(--fs-6);
+}
+
+/* Buttons Section */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.default-buttons,
+.hover-buttons,
+.active-buttons,
+.disabled-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--fs-6);
+  /* font-weight: 600; */
+  height: 50px;
+  width: 200px;
+}
+
+.default-btn {
+  background-color: var(--clr-accent-blue);
+  color: var(--clr-white);
+}
+
+.default-outline-btn {
+  border: 2px solid var(--clr-accent-blue);
+  color: var(--clr-accent-blue);
+}
+
+.hover-btn {
+  background-color: var(--clr-accent-blue);
+  color: var(--clr-white);
+  filter: brightness(120%);
+}
+
+.hover-outline-btn {
+  border: 2px solid var(--clr-accent-blue);
+  color: var(--clr-accent-blue);
+  filter: brightness(120%);
+}
+
+.active-btn {
+  background-color: var(--clr-accent-blue);
+  color: var(--clr-white);
+  filter: brightness(80%);
+}
+
+.active-outline-btn {
+  border: 2px solid var(--clr-accent-blue);
+  color: var(--clr-accent-blue);
+  filter: brightness(80%);
+}
+
+.disabled-btn {
+  background-color: var(--clr-icon-gray);
+  color: var(--clr-white);
+  cursor: not-allowed;
+}
+
+.disabled-outline-btn {
+  border: 2px solid var(--clr-icon-gray);
+  color: var(--clr-icon-gray);
+  cursor: not-allowed;
+}
